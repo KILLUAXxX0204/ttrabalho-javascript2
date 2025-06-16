@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trabalho 2 Bimestre</title>
+  <link rel="stylesheet" href="STYLE00000.CSS" />
+   <script src="SCRIPT00000.JS" defer></script>
+</head>
+<body>
+  <div class="container">
+    <h1><br>Tabalho de Lógica e Cálculo</h1></br>
+    <p>Nome: Iago Duarte Pereira, RA:60009054</p>
+    <p>Nome: Wellington Vinicius Bonfim da Silva, RA:60005809</p>
+<br>
+    <!-- 1. Verificador de Triângulo -->
+    <section>
+      <h2>1. Verificador de Triângulo</h2>
+      <input type="number" id="x" placeholder="Lado X">
+      <input type="number" id="y" placeholder="Lado Y">
+      <input type="number" id="z" placeholder="Lado Z">
+      <button onclick="verificarTriangulo()">Verificar</button>
+      <p id="resultadoTriangulo"></p>
+    </section>
+
+    <!-- 2. Calculadora IMC -->
+    <section>
+      <h2>2. Calculadora de IMC</h2>
+      <input type="number" id="peso" placeholder="Peso (kg)">
+      <input type="number" id="altura" placeholder="Altura (m)">
+      <button onclick="calcularIMC()">Calcular IMC</button>
+      <p id="resultadoIMC"></p>
+    </section>
+
+    <!-- 3. Calculadora de Impostos -->
+    <section>
+      <h2>3. Calculadora de Impostos</h2>
+      <input type="number" id="ano" placeholder="Ano do carro">
+      <input type="number" id="valorCarro" placeholder="Valor do carro">
+      <button onclick="calcularImposto()">Calcular Imposto</button>
+      <p id="resultadoImposto"></p>
+    </section>
+
+    <!-- 4. Aumento de Salário -->
+    <section>
+      <h2>4. Aumento de Salário</h2>
+      <input type="number" id="salario" placeholder="Salário atual">
+      <input type="number" id="cargo" placeholder="Código do cargo">
+      <button onclick="calcularSalario()">Calcular Novo Salário</button>
+      <p id="resultadoSalario"></p>
+    </section>
+
+    <!-- 5. Crédito Bancário -->
+    <section>
+      <h2>5. Crédito Bancário</h2>
+      <input type="number" id="saldo" placeholder="Saldo médio anual">
+      <button onclick="calcularCredito()">Calcular Crédito</button>
+      <p id="resultadoCredito"></p>
+    </section>
+
+    <!-- 6. Lanchonete -->
+    <section>
+      <h2>6. Cálculo de Lanche</h2>
+      <input type="text" id="codigoLanche" placeholder="Código do item">
+      <input type="number" id="quantidade" placeholder="Quantidade">
+      <button onclick="calcularLanche()">Calcular Valor</button>
+      <p id="resultadoLanche"></p>
+    </section>
+
+    <!-- 7. Sistema de Vendas -->
+    <section>
+      <h2>7. Sistema de Vendas</h2>
+      <input type="number" id="precoEtiqueta" placeholder="Preço normal do produto">
+      <select id="condicaoPagamento">
+        <option value="a">À vista (dinheiro/cheque) - 10% desconto</option>
+        <option value="b">À vista (cartão) - 15% desconto</option>
+        <option value="c">2x sem juros</option>
+        <option value="d">2x com 10% de juros</option>
+      </select>
+      <button onclick="calcularVenda()">Calcular Valor Final</button>
+      <p id="resultadoVenda"></p>
+    </section>
+
+    <!-- 8. Sistema de Pagamento Professores -->
+    <section>
+      <h2>8. Pagamento de Professores</h2>
+      <select id="nivelProfessor">
+        <option value="1">Nível 1 - R$12,00</option>
+        <option value="2">Nível 2 - R$17,00</option>
+        <option value="3">Nível 3 - R$25,00</option>
+      </select>
+      <input type="number" id="qtdAulas" placeholder="Quantidade de aulas semanais">
+      <button onclick="calcularSalarioProfessor()">Calcular Salário</button>
+      <p id="resultadoProfessor"></p>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
